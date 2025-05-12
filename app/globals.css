@@ -22,14 +22,46 @@
   }
 }
 
+/*body {*/
+/*  background: var(--tg-theme-bg-color);*/
+/*  color: var(--tg-theme-text-color);*/
+/*  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;*/
+/*  min-height: 100vh;*/
+/*  padding-bottom: env(safe-area-inset-bottom);*/
+/*}*/
+
+/* Добавляем градиентный фон */
 body {
-  background: var(--tg-theme-bg-color);
-  color: var(--tg-theme-text-color);
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  min-height: 100vh;
-  padding-bottom: env(safe-area-inset-bottom);
+  background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff6a65);
+  background-size: 400% 400%;
+  animation: gradientAnimation 15s ease infinite;
+  color: #fff; /* Устанавливаем цвет текста для контраста */
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
 }
 
+/* Анимация для градиента */
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+/* Центрирование контента */
+#root, .max-w-md {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 /* Telegram-specific components */
 .tg-button {
   padding: 0.5rem 1rem;
