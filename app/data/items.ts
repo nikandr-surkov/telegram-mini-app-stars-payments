@@ -11,23 +11,23 @@ export interface Item {
 export const ITEMS: Item[] = [
   {
     id: 'ice_cream',
-    name: 'Ice Cream 🍦',
-    description: 'A delicious virtual ice cream',
-    price: 1,
-    icon: '🍦'
+    name: 'Bitcoin 💲',
+    description: 'Buy a delicious virtual Bitcoin',
+    price: 10,
+    icon: '💲'
   },
   {
     id: 'cookie',
     name: 'Cookie 🍪',
     description: 'A sweet virtual cookie',
-    price: 3,
+    price: 30,
     icon: '🍪'
   },
   {
     id: 'hamburger',
     name: 'Hamburger 🍔',
     description: 'A tasty virtual hamburger',
-    price: 5,
+    price: 50,
     icon: '🍔'
   }
 ];
