@@ -32,7 +32,7 @@
 
 /* Добавляем градиентный фон */
 body {
-  background: linear-gradient(135deg, #ff7eb3, #ff758c, #ff6a65);
+  background: linear-gradient(135deg, #3d3b3b, #333132, #1c1b1b);
   background-size: 400% 400%;
   animation: gradientAnimation 15s ease infinite;
   color: #fff; /* Устанавливаем цвет текста для контраста */
